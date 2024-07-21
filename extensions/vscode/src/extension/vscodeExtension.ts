@@ -328,5 +328,7 @@ export class VsCodeExtension {
     } else {
       console.log("Codebase Indexing Complete");
     }
+
+		this.webviewProtocol.request("refreshSubmenuItems", undefined);
   }
 }
